@@ -28,7 +28,6 @@ int main() {
     double avg1 = average(vec);
     double avg2 = average2(vec);
     double avg3 = average3(vec);
-    std::cout << avg3; 
     std::cout << "Average is " << avg1 << " according to average via loop over indices" << '\n'
               << "Average is " << avg2 << " according to average via a range-based loop" << '\n'; 
     std::cout << "Average is " << avg3 << " according to average via std::accumulate" << '\n';
