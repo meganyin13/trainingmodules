@@ -9,6 +9,7 @@ class Rational {
         Rational operator/(Rational& r);
         double value();
         void print();
+        int postfix();
         int a, b;
 };
 
