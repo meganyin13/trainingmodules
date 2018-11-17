@@ -8,5 +8,6 @@ class Rational {
         double value();
         void print();
         int postfix();
+	void setRational(int i1, int i2);
         int a, b;
 };

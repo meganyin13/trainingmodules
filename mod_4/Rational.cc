@@ -52,6 +52,12 @@ void Rational::print() {
    std::cout << this->a << " / " << this->b << std::endl;
 }
 
+void Rational::setRational(int i1, int i2) {
+   a = i1;
+   b = i2;
+}
+
+/*
 int main () {
     Rational r1(4,7);
     Rational r2(3,9);
@@ -72,4 +78,5 @@ int main () {
     Rational res4 = r1 / r2;
     res4.print();
 }
+*/
     
