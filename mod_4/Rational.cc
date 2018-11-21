@@ -1,6 +1,11 @@
 #include <iostream>
 #include "Rational.h"
 
+Rational::Rational() {
+    a = 0;
+    b = 0;
+}
+
 Rational::Rational(int i1, int i2) { 
     a = i1;
     b = i2;
@@ -45,7 +50,7 @@ Rational Rational::operator/(Rational& r) {
 }
 
 double Rational::value() {
-   return a / b;
+   return (double)a/b;
 } 
 
 void Rational::print() {
