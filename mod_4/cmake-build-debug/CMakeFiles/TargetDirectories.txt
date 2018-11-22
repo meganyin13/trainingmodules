@@ -1,0 +1,3 @@
+/Users/meganyin/trainingmodules/mod_4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/meganyin/trainingmodules/mod_4/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/meganyin/trainingmodules/mod_4/cmake-build-debug/CMakeFiles/postfix.dir
