@@ -1,5 +1,2 @@
-// don't ignore .h, .cc, .txt, Makefile
-!.h
-!.cc
-!.txt
-!Makefile
+*/cmake-build-debug
+*/.idea

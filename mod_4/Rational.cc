@@ -62,26 +62,26 @@ void Rational::setRational(int i1, int i2) {
    b = i2;
 }
 
-/*
-int main () {
-    Rational r1(4,7);
-    Rational r2(3,9);
-    
-    // Add them
-    Rational res = r1 + r2;
-    res.print();
 
-    // Subtract them
-    Rational res2 = r1 - r2;
-    res2.print();
+//int main () {
+//    Rational r1(4,7);
+//    Rational r2(3,9);
+//
+//    // Add them
+//    Rational res = r1 + r2;
+//    res.print();
+//
+//    // Subtract them
+//    Rational res2 = r1 - r2;
+//    res2.print();
+//
+//    // Multiply them
+//    Rational res3 = r1 * r2;
+//    res3.print();
+//
+//    // Divide them
+//    Rational res4 = r1 / r2;
+//    res4.print();
+//}
 
-    // Multiply them
-    Rational res3 = r1 * r2;
-    res3.print();
-
-    // Divide them
-    Rational res4 = r1 / r2;
-    res4.print();
-}
-*/
     
