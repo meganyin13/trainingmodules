@@ -194,7 +194,7 @@
       <option name="presentableId" value="Default" />
       <updated>1542901224068</updated>
       <workItem from="1542901226371" duration="472000" />
-      <workItem from="1542901921181" duration="1488000" />
+      <workItem from="1542901921181" duration="1728000" />
     </task>
     <task id="LOCAL-00001" summary="cleaned up extraneous files">
       <created>1542903401781</created>
@@ -207,7 +207,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1960000" />
+    <option name="totallyTimeSpent" value="2200000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
