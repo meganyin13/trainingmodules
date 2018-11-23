@@ -22,15 +22,14 @@ Rational postfix(string expr) {
          if (expr[i] == ' ') {
              space = true;
 	     if (rational) {
-		Rational r(*stk.pop(), *stk.pop());
-		stk2.push(&r);
-		rational = false;
-		space = false;
+            Rational r(*stk.pop(), *stk.pop());
+            stk2.push(&r);
+            rational = false;
+            space = false;
 	     }
              continue;
          }
-	 cout << "hi " << expr[i] << endl;
-         
+
          if (isNumber(expr[i])) {
              int num = 0;
              while ((unsigned) i < expr.length() && isNumber(expr[i])) {
@@ -42,26 +41,19 @@ Rational postfix(string expr) {
 	     stk.push(&num);
 	     continue;
 	  }
-	  
-	  cout << "hi2 " << expr[i] << endl;
 
 	  if (!space && expr[i] == '/') {
 	     rational = true;
 	     continue;
 	  }
 
-	  cout << "hi3 " << expr[i] << endl;
-	  
 	  if (isOperator(expr[i])) {
 	     Rational t = operation(expr[i], *stk2.pop(), *stk2.pop());
 	     t.print();
 	     stk2.push(&t);
 	  }
 
-	  cout << "hi4 " << expr[i] << endl;
-             
     }
-    cout << "pop" << endl;
     return *stk2.pop();
 }
 
@@ -86,7 +78,6 @@ int main() {
     std::string expr;
     cout << "Postfix Expression: ";
     std::getline(cin, expr);
-    cout << expr << endl;
     Rational res = postfix(expr);
     res.print();
 }
