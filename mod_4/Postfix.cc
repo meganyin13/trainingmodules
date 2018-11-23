@@ -21,12 +21,13 @@ Rational postfix(string expr) {
     for (int i = 0; (unsigned) i < expr.length(); i++) {
          if (expr[i] == ' ') {
              space = true;
-	     if (rational) {
-            Rational r(*stk.pop(), *stk.pop());
-            stk2.push(&r);
-            rational = false;
-            space = false;
-	     }
+             if (rational) {
+                 int t1 = *stk.pop();
+                Rational r(*stk.pop(), t1);
+                 stk2.push(&r);
+                 rational = false;
+                 space = false;
+             }
              continue;
          }
 
@@ -49,7 +50,6 @@ Rational postfix(string expr) {
 
 	  if (isOperator(expr[i])) {
 	     Rational t = operation(expr[i], *stk2.pop(), *stk2.pop());
-	     t.print();
 	     stk2.push(&t);
 	  }
 
